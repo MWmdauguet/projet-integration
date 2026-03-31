@@ -5,13 +5,133 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Projet Intégration</title>
+
+    
 </head>
 <body>
-    <div class="header">
+    <header class="shadow-lg flex justify-between items-center px-8 py-4">
+        <div class="flex-shrink-0 flex items-center">
+            <img src="assets/images/logo.png" alt="Logo">
+        </div>
+        <nav class="flex-1 flex justify-center">
+            <ul class="flex gap-5 font-medium text-[#646c7a]">
+                <li><a href="#">Try it</a></li>
+                <li><a href="#">How it works</a></li>
+                <li><a href="#">Use cases</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">FAQ</a></li>
+            </ul>
+        </nav>
+        <div class="flex items-center gap-2">
+            <button class="bg-[#eff2ff] text-[#4238c9] font-medium px-4 py-2 rounded-[9px]">Login</button>
+            <button class="bg-[#4f46e5] gap-2 flex items-center text-white px-4 py-2 rounded-[8px]">
+                <img class="w-[20px] h-[20px]" src="assets/images/arrow.png" alt="Fleche droite">
+                Get Talknotes +
+            </button>
+        </div>
+    </header>
 
-    </div>
+    <section class="p-8">
+        <div class="flex flex-row gap-12 items-center">
+            <!-- Bloc gauche : texte -->
+            <div class="flex flex-col gap-6 flex-1">
+                <div class="flex flex-col">
+                    <img src="assets/images/award.png" alt="Award" class="w-[150px] h-auto mb-4 mx-auto">
+                    <h1 class="text-[35px] font-medium">Never Take Notes Again,</h1>
+                    <h2 class="text-[#4e46de] text-[35px] font-medium">There's an AI for that<span>.</span></h2>
+                    <h3 class="text-[23px] font-medium bg-gradient-to-r from-[#ff009e] via-[#ff306f] to-[#ff6300] bg-clip-text text-transparent">Try TalkNotes free for 7 days</h3>
+                </div>
+                <div class="flex flex-col">
+                    <p class="text-lg text-[#566070]">Join thousands of professionnals who use AI voice transcription and note-taking to save time, impress colleagues and clients whith organized notes while working smarter, not harder.</p>
+                    <p class="text-sm text-[#9ca2ae]">Available on web, iOS and Android</p>
+                </div>
+                <div class="mt-4">
+                    <h1 class="font-medium text-[#4c5663] mb-1 text-lg">Works in:</h1>
+                    <div class="p-3 flex gap-2 bg-transparent flex-wrap">
+                        <div class="flex items-center gap-1 bg-[#e0e7ff] rounded-[18px] px-2 py-1">
+                            <img src="https://flagcdn.com/16x12/gb.png" alt="English" class="w-4 h-3" loading="lazy">
+                            <span class="text-[#4238c9] text-xs font-normal">English</span>
+                        </div>
+                        <div class="flex items-center gap-1 bg-[#e0e7ff] rounded-[18px] px-2 py-1">
+                            <img src="https://flagcdn.com/16x12/es.png" alt="Spanish" class="w-4 h-3" loading="lazy">
+                            <span class="text-[#4238c9] text-xs font-normal">Spanish</span>
+                        </div>
+                        <div class="flex items-center gap-1 bg-[#e0e7ff] rounded-[18px] px-2 py-1">
+                            <img src="https://flagcdn.com/16x12/fr.png" alt="French" class="w-4 h-3" loading="lazy">
+                            <span class="text-[#4238c9] text-xs font-normal">French</span>
+                        </div>
+                        <div class="flex items-center gap-1 bg-[#e0e7ff] rounded-[18px] px-2 py-1">
+                            <img src="https://flagcdn.com/16x12/de.png" alt="German" class="w-4 h-3" loading="lazy">
+                            <span class="text-[#4238c9] text-xs font-normal">German</span>
+                        </div>
+                        <div class="flex items-center gap-1 bg-[#e0e7ff] rounded-[18px] px-2 py-1">
+                            <img src="https://flagcdn.com/16x12/nl.png" alt="Dutch" class="w-4 h-3" loading="lazy">
+                            <span class="text-[#4238c9] text-xs font-normal">Dutch</span>
+                        </div>
+                        <div class="flex items-center gap-1 bg-[#e0e7ff] rounded-[18px] px-2 py-1">
+                            <img src="https://flagcdn.com/16x12/pt.png" alt="Portuguese" class="w-4 h-3" loading="lazy">
+                            <span class="text-[#4238c9] text-xs font-normal">Portuguese</span>
+                        </div>
+                    </div>
+                </div>
 
-    <div class="bloc1"></div>
+                
+                <div class="mt-6 flex flex-col items-center gap-3">
+                    <button class="bg-gradient-to-r from-[#f10086] via-[#d300b1] to-[#af01e8] gap-2 flex items-center justify-center text-white w-[458px] px-4 py-2 rounded-[8px] border-0">
+                        <img class="w-[20px] h-[20px]" src="assets/images/arrow.png" alt="Fleche droite">
+                        Try TailkNotes free for 7 days
+                    </button>
+                    <p class="flex items-center gap-2 text-[#9aa1ae] text-sm font-normal mb-1">
+                        Trusted by +10,000 happy users
+                        <span class="flex text-[#fb923c] text-base">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20" class="w-4 h-4"><path d="M10 15.27L16.18 19l-1.64-7.03L20 7.24l-7.19-.61L10 0 7.19 6.63 0 7.24l5.46 4.73L3.82 19z"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20" class="w-4 h-4"><path d="M10 15.27L16.18 19l-1.64-7.03L20 7.24l-7.19-.61L10 0 7.19 6.63 0 7.24l5.46 4.73L3.82 19z"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20" class="w-4 h-4"><path d="M10 15.27L16.18 19l-1.64-7.03L20 7.24l-7.19-.61L10 0 7.19 6.63 0 7.24l5.46 4.73L3.82 19z"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20" class="w-4 h-4"><path d="M10 15.27L16.18 19l-1.64-7.03L20 7.24l-7.19-.61L10 0 7.19 6.63 0 7.24l5.46 4.73L3.82 19z"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20" class="w-4 h-4"><path d="M10 15.27L16.18 19l-1.64-7.03L20 7.24l-7.19-.61L10 0 7.19 6.63 0 7.24l5.46 4.73L3.82 19z"/></svg>
+                        </span>
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-3 items-center">
+                        <a href="#" class="block">
+                            <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store" class="h-12 w-auto">
+                        </a>
+                        <a href="#" class="block">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play" class="h-12 w-auto">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Bloc droit : lecteur audio -->
+            <div class="flex-1 flex justify-center">
+                <div class="w-full max-w-md border border-[#cdd8ff] rounded-[24px] p-6 flex flex-col items-center shadow-md">
+                    <h2 class="text-lg font-semibold text-[#48505c] mb-4 text-center">Interactive demo</h2>
+                    <!-- Slider (variateur) -->
+                    <input type="range" min="0" max="100" value="50" class="w-full accent-[#4e46de] mb-2">
+                    <!-- Timer -->
+                    <p class="text-[#979fab] text-xs"> Limit 01:00</p>
+                    <div class="font-medium text-xl mb-4">00:00</div>
+                    <!-- Boutons -->
+                    <div class="flex gap-6 justify-center">
+                        <button class="bg-[#4f46e5] hover:bg-[#3730a3] text-white rounded-full p-3 shadow transition">
+                            <img src="assets/images/play.png" alt="Play" class="w-6 h-6" />
+                        </button>
+                        <button class="bg-[#e0e7ff] hover:bg-[#c7d2fe] text-[#4f46e5] rounded-full p-3 shadow transition">
+                           <img src="assets/images/microphone.png" alt="Pause" class="w-6 h-6" />
+                        </button>
+                        <button class="bg-[#fee2e2] hover:bg-[#fecaca] text-[#ef4444] rounded-full p-3 shadow transition">
+                            <img src="assets/images/delete.png" alt="Delete" class="w-6 h-6" />
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex">
+                <img src="assets/images/gradient.png" alt="Gradient" class="w-full h-auto">
+                <img src="assets/images/gradient.png" alt="Gradient" class="w-full h-auto">
+                <img src="assets/images/gradient.png" alt="Gradient" class="w-full h-auto">
+                <img src="assets/images/gradient.png" alt="Gradient" class="w-full h-auto">
+            </div>
+    </section>
     <div class="bloc2"></div>
     <div class="bloc3"></div>
     <div class="bloc4"></div>
