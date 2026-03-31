@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>TalkNotes – Login</title>
+</head>
+<body class="bg-white min-h-screen flex flex-col">
+
+    <main class="flex-1 flex justify-center pt-32 px-4">
+        <div class="w-full max-w-96">
+
+            <!-- Logo -->
+            <div class="flex items-center gap-1.75 mb-8">
+                <svg width="34" height="22" viewBox="0 0 34 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="0"  y="7"   width="4" height="8"  rx="2" fill="#c084fc"/>
+                    <rect x="6"  y="2.5" width="4" height="17" rx="2" fill="#ec4899"/>
+                    <rect x="12" y="0"   width="4" height="22" rx="2" fill="#c084fc"/>
+                    <rect x="18" y="2.5" width="4" height="17" rx="2" fill="#ec4899"/>
+                    <rect x="24" y="7"   width="4" height="8"  rx="2" fill="#c084fc"/>
+                    <rect x="30" y="9"   width="4" height="4"  rx="2" fill="#ec4899"/>
+                </svg>
+                <span class="text-lg font-semibold text-gray-900 tracking-tight">TalkNotes</span>
+            </div>
+
+            <!-- Title -->
+            <h1 class="text-2xl font-bold text-gray-900 mb-2.5 tracking-tight leading-snug">
+                Login to your account
+            </h1>
+
+            <!-- Subtitle -->
+            <p class="text-sm text-gray-400 leading-relaxed mb-7">
+                Enter your email to receive a one-time password (or use<br>
+                permanent password if you defined one).
+            </p>
+
+            <!-- Email label + input -->
+            <div class="mb-8">
+                <label class="block text-sm font-bold text-gray-600 mb-2">
+                    Email address:
+                </label>
+                <input class="w-full px-3 py-2.5 shadow-sm border-2 border-gray-100 rounded-lg text-sm text-gray-700 placeholder-gray-400 outline-none" type="email" placeholder="your@email.com"/>
+            </div>
+
+            <!-- OTP button -->
+            <button class="w-full flex items-center justify-center gap-2 text-white text-md font-medium py-2 px-4 rounded-lg transition mb-2.5" style="background-color: #a59fd5;" onmouseover="this.style.backgroundColor='#7a6dd4'" onmouseout="this.style.backgroundColor='#8b82e0'">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="4" width="20" height="16" rx="2"/>
+                    <path d="m2 7 10 7 10-7"/>
+                </svg>
+                Get one-time password
+            </button>
+
+            <!-- Password button -->
+            <button class="w-full flex items-center justify-center gap-2 bg-white text-md font-medium py-2 px-4 rounded-lg border-2 transition mb-5" style="color: #6254db; border-color: #6254db;" onmouseover="this.style.backgroundColor='rgba(139, 130, 224, 0.05)'" onmouseout="this.style.backgroundColor='white'">
+                <!-- fingerprint icon -->
+                <img src="assets/images/fingerprint.png" class="w-6">
+                Login with password
+            </button>
+
+            <!-- Problems link -->
+            <p class="text-center text-sm text-gray-400 mb-9">
+                Problems logging in?&nbsp;<a href="#" class="font-medium no-underline" style="color: #6254db;" onmouseover="this.style.color='#7a6dd4'" onmouseout="this.style.color='#8b82e0'">Click here</a>
+            </p>
+
+            <!-- Separator -->
+            <div class="flex items-center gap-3.5 mb-4.5">
+                <div class="flex-1 h-px bg-gray-200"></div>
+                <span class="text-sm text-gray-400 whitespace-nowrap">Or continue with</span>
+                <div class="flex-1 h-px bg-gray-200"></div>
+            </div>
+
+            <!-- Social buttons -->
+            <div class="flex gap-3">
+
+                <button class="flex-1 flex items-center justify-center gap-2 text-gray-700 text-sm font-medium py-2.75 px-2 rounded-lg shadow-sm whitespace-nowrap bg-gray-50 hover:bg-gray-500 transition">
+                    <svg width="16" height="16" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
+                        <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
+                        <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/>
+                        <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
+                    </svg>
+                    Continue with Google
+                </button>
+
+                <button class="flex-1 flex items-center justify-center gap-2 text-gray-700 text-sm font-medium py-2.75 px-2 rounded-lg shadow-sm whitespace-nowrap bg-gray-50 hover:bg-gray-500 transition">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="#111827" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+                    </svg>
+                    Continue with Apple
+                </button>
+
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Bottom border line -->
+    <div class="h-px bg-gray-200 mt-16"></div>
+
+    <!-- Floating help button -->
+    <div class="fixed bottom-[50px] md:bottom-[230px] right-0 w-12 h-20 rounded-l-[10px] bg-[#6254db] flex items-center justify-center cursor-pointer">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+        </svg>
+    </div>
+
+</body>
+</html>
